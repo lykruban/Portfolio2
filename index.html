@@ -83,6 +83,25 @@
             transform: scale(1.1);
         }
 
+        /* Modified contact info styles for mobile */
+        @media (max-width: 768px) {
+            .contact-info a {
+                font-size: 0;
+            }
+
+            .contact-info a img {
+                opacity: 1;
+            }
+
+            .contact-info.scrolled a:first-child {
+                transform: none;
+            }
+
+            .contact-info.scrolled a:last-child {
+                transform: none;
+            }
+        }
+
         .contact-info.scrolled a {
             font-size: 0;
         }
@@ -201,6 +220,13 @@
         .hero-nav a:hover {
             color: #ffff00;
             transform: translateX(-10px);
+        }
+
+                /* Modified hero nav styles for mobile */
+        @media (max-width: 768px) {
+            .hero-nav {
+                display: none;
+            }
         }
 
         .hero h1 {
